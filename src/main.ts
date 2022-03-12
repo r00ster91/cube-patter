@@ -1,8 +1,10 @@
 import "./style.css";
 import { load } from "./load";
 
-const game = await load();
+async function main() {
+    const game = await load();
 
-game.run();
+    game.run();
+}
 
-// 次は喋る豆腐のような曲がりとか傾きとか動きを
+main();
